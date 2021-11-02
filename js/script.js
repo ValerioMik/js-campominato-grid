@@ -24,4 +24,19 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro (
 
     //3.faccio si che i quadrati siano cambiati di colore tramite il click
 
-    
+    const difficoltaScelta = prompt("scegli tra FACILE,MEDIO,DIFFICILE")
+    const numeroDiquadrati = document.getElementById("campominato");
+
+
+
+
+
+
+    //FUNZIONI
+
+    function generaquadrati(minmo,max,difficolta){
+        for (let i = minmo; i < max; i++) {
+            squareCont.innerHTML += ` <div class="${difficolta}"></div>`;
+    }
+
+}
