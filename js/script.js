@@ -47,28 +47,18 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro (
 
 for (let i = 0; i < livello; i++){
     let creaQuadrati = generaElemento("div",RisultatoLiv);
+    creaQuadrati.addEventListener("click", 
+        function(){
+            creaQuadrati.classList.add("active");
+   });
     numeroDiquadrati.append(creaQuadrati);
+    
    }
 
-   creaQuadrati.addEventListener("click", 
-   
-        function(){
-            document.getElementsByClassName(RisultatoLiv).classList.add("active");
-
-   });
-
-    
+  
    
 
-
     
-
- 
-
-    
-
-   
-
     //FUNZIONI
 
    
